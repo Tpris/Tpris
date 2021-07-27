@@ -193,7 +193,7 @@ header ul:hover:before{
     padding-top: 20px;*/
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
     *{
         font-size: 120%;
     }
