@@ -63,7 +63,7 @@ ul::before {
     mask-composite: exclude; 
 }
 ul:nth-child(odd)::before {
-    background:linear-gradient(45deg,yellow,red,blue); 
+    background:linear-gradient(45deg,yellow,red 40% 70%,blue); 
 }
 ul:nth-child(even)::before {
     background:linear-gradient(-45deg,yellow,red,blue); 
@@ -104,5 +104,8 @@ p{
     }
     ul{
         width: 90vw;
+    }
+    ul::before{
+        padding:30px;
     }
 }
