@@ -197,9 +197,12 @@ header ul:hover:before{
     *{
         font-size: 120%;
     }
+    a {
+        font-size: 70%;
+    }
     #bande h2{
 	    padding:3px;
-	}
+    }
     #bande li{
         min-width: 265px;
     }
