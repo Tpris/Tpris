@@ -202,7 +202,7 @@ header ul:hover:before{
     padding-top: 20px;*/
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1500px) and (min-height:1000px){
     *{
         font-size: 120%;
     }
@@ -210,7 +210,7 @@ header ul:hover:before{
         font-size: 70%;
     }
     p{
-        font-size: 100%;
+        font-size: 90%;
     }
     #bande li{
         min-width: 265px;
