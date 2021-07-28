@@ -83,3 +83,26 @@ li:last-child{
 p{
     padding-left: 1vw;
 }
+
+@media only screen and (max-width: 1500px) and (min-height:1000px){
+    *{
+        font-size: 120%;
+    }
+    h1{
+        font-size: 200%;
+    }
+    h2{
+        font-size: 150%;
+    }
+    #profil img, #profil{
+        height: 200px;
+        width: 200px;
+    }
+    header a, header a img{
+        height: 110px;
+        width: 125px; 
+    }
+    ul{
+        width: 90vw;
+    }
+}
