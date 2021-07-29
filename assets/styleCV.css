@@ -43,6 +43,7 @@ header a, header a img{
 h1, h2 { text-align: center; }
 
 ul {
+    margin:10px;
     min-width: 400px;
     box-shadow: 5px 5px 5px rgb(116, 116, 116);
     list-style:none;
