@@ -42,50 +42,59 @@ header a, header a img{
 
 h1, h2 { text-align: center; }
 
-ul {
-    margin:10px;
+ul{
     min-width: 400px;
-    box-shadow: 5px 5px 5px rgb(116, 116, 116);
     list-style:none;
-    position:relative;
-}
-ul::before {
-    content:"";
-    position:absolute;
-    top:0;
-    left:0;
-    right:0;
-    bottom:0;
-    padding:10px; 
-    -webkit-mask: 
-       linear-gradient(#fff 0 0) content-box, 
-       linear-gradient(#fff 0 0);
-    -webkit-mask-composite: destination-out; 
-    mask-composite: exclude; 
-}
-ul:nth-child(odd)::before {
-    background:linear-gradient(45deg,yellow,red 40% 70%,blue); 
-}
-ul:nth-child(even)::before {
-    background:linear-gradient(-45deg,yellow,red,blue); 
-}
-ul:nth-child(odd)::before, ul:nth-child(odd) { 
-    border-radius:100px 30px; 
-}
-  
-ul:nth-child(even)::before, ul:nth-child(even) {
-    border-radius: 30px 100px; 
+    padding: .8em 1em;
+    position: relative;
+    border: 3px blue solid;
+    border-image: linear-gradient(90deg, blue ,red,yellow);
+    border-image-slice: 1 1 0 0;
+    transition: 0.2s;
+} 
+ul:before, ul:after {
+    border: 3px solid;
+    content: '';
+    position: absolute;
 }
 
-li:last-child{
-    padding-bottom:30px;
+ul:before {
+    border-color: blue;
+    left: -0.59em; top: .1em;
+    width: .31em;
+    height: 100%;
+    transform: skewY(-45deg);
 }
+
+ul:after {
+    border-image: linear-gradient(90deg, blue ,red,yellow);
+    border-image-slice: 1 1 1 0;
+    bottom: -0.7em; right: 0.16em;
+    width: 100%;
+    height: .31em;
+    transform: skewX(-45deg);
+}
+
+ul:hover {
+    transform: translate(0.5em,-0.5em);
+    box-shadow: -1em 1em .15em rgb(146, 146, 146);
+}
+
+ul:hover::after {
+    border-left: blue;
+    border-right: yellow;
+    background-image:linear-gradient(90deg, blue ,red,yellow);
+}
+ul:hover::before {
+    background:blue ;
+}
+    
 
 p{
     padding-left: 1vw;
 }
 
-@media only screen and (max-width: 1500px) and (min-height:1000px){
+@media only screen and (max-width: 1000px) and (min-height:1500px){
     *{
         font-size: 120%;
     }
@@ -104,9 +113,6 @@ p{
         width: 125px; 
     }
     ul{
-        width: 90vw;
-    }
-    ul::before{
-        padding:30px;
+        width: 70vw;
     }
 }
