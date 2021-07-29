@@ -150,6 +150,11 @@ header ul:hover:before{
     box-shadow: -3px 0px 5px 0.5px rgb(146, 146, 146);
 }
 
+#profil:hover{
+    transform:rotate(360deg);
+    transition:0.75s;
+}
+
 #bib a{
     text-decoration: none;
     color: black;
