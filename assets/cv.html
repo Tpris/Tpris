@@ -6,9 +6,10 @@
     <title>CV</title>
     <link rel="icon" href="img/favicon.ico"/>
     <link rel="stylesheet" href="styleCV.css">
+    <script src="scriptCV.js"></script>
 </head>
 
-<body>
+<body onload="init()">
     <h1>En cours de réalisation</h1>
     <header>
         <a href="../index.html">
@@ -18,11 +19,30 @@
             <img src="img/panda2.jpg">
         </div>
         <h1>Priscilla Tissot</h1>
+        <button id="btnPopup">Contacts</button>
+        <div id="overlay">
+            <nav>
+                <span id="btnClose">&times;</span>
+                <h2>Contacts</h2>
+                <h4>Vis à Bordeaux avec un permis B</h4>
+                <h4>Née le 3 février 1999</h4>
+                <ul>
+                    <li><a href="https://fr.linkedin.com/in/priscilla-tissot-9493851b8">Lien LinkedIn</a></li>
+                    <li>Mail
+                        <ul>
+                            <li>priscill@live.fr</li>
+                            <li>priscilla.tissot@u-bordeaux.fr</li>
+                        </ul>
+                    </li>
+                    <li>Tél : 06.66.80.81.XX</li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <article>
         <ul>
-            <h2>Titre</h2>
+            <h2>Formation</h2>
             <li>
                 <h3>Intitulé</h3>
                 <p>Details</p>
@@ -37,7 +57,7 @@
             </li>
         </ul>
         <ul>
-            <h2>Titre</h2>
+            <h2>Compétences</h2>
             <li>
                 <h3>Intitulé</h3>
                 <p>Details</p>
@@ -52,7 +72,22 @@
             </li>
         </ul>
         <ul>
-            <h2>Titre</h2>
+            <h2>Expériences</h2>
+            <li>
+                <h3>Intitulé</h3>
+                <p>Details</p>
+            </li>
+            <li>
+                <h3>Intitulé</h3>
+                <p>Details</p>
+            </li>
+            <li>
+                <h3>Intitulé</h3>
+                <p>Details</p>
+            </li>
+        </ul>
+        <ul>
+            <h2>Centres D'interet</h2>
             <li>
                 <h3>Intitulé</h3>
                 <p>Details</p>
