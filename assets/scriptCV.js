@@ -6,9 +6,19 @@ function init() {
     function open() {
         overlay.style.display = 'block';
     }
+    
     var btnClose = document.getElementById('btnClose');
-    btnClose.addEventListener('click', close);
     function close() {
-        overlay.style.display = 'none';
+        overlay.style.display='none';
+    }
+    btnClose.addEventListener('click',close)
+    
+    var nav = document.getElementById('blocTexte');
+    var openn = true;
+    overlay.addEventListener('click',closeout);
+    function closeout() {
+        nav.addEventListener('click',function () {openn = true;})
+        if (!openn) overlay.style.display='none';
+        openn = false;
     }
 }
