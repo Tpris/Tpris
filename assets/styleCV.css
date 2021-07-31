@@ -173,6 +173,9 @@ header li {
 nav h4{
     text-align: center;
 }
+#btnClose{
+    color:white;
+}
 
 @media only screen and (max-width: 1000px) and (min-height:1500px){
     *{
@@ -201,5 +204,20 @@ nav h4{
     }
     li li{
         font-size: 80%;
+    }
+    #btnClose{
+        font-size: 2em;
+    }
+}
+@media only screen and (max-width: 1000px) and (max-height:1500px) and (min-height:1000px){
+    #btnClose{
+        font-size: 2em;
+    }
+    #overlay, button{
+        font-size: 2em;
+    }
+    nav{
+        width : auto;
+        margin: 0;
     }
 }

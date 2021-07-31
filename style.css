@@ -261,14 +261,20 @@ nav h4{
     a {
         font-size: 70%;
     }
+    header nav a {
+        font-size: 100%;
+    }
     p{
         font-size: 90%;
     }
     #bande li{
         min-width: 265px;
     }
-    h1,h2{
-        font-size: 150%;
+    h1{
+        font-size: 160%;
+    }
+    #bande h2{
+        font-size: 1.2em;
     }
     #profil img, #profil{
         height: 200px;
@@ -280,6 +286,9 @@ nav h4{
     }
     li li{
         font-size: 80%;
+    }
+    #btnClose{
+        font-size: 2em;
     }
 }
 
