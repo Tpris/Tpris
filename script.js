@@ -44,7 +44,7 @@ $(document).ready(function () {
         $("#bande ul li").eq(3).css('opacity', '1');
     });
     $("#bande ul li").eq(4).hover(function () {
-        $("#bande h2").text("Viens voir les livres que je lis");
+        $("#bande h2").text("Venez voir les livres que je lis");
         $("#bande ul li").eq(4).css('opacity', '1');
     });
     counter = 0;
