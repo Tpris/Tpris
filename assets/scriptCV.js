@@ -50,6 +50,7 @@ function send() {
         node.appendChild(textnode);
         let listemsg = document.getElementById('messages');
         listemsg.appendChild(node);
+        chatInput.value =""
     }
 }
 
