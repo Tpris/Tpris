@@ -165,7 +165,7 @@ h3, p{margin-bottom: 0.2em;}
     border-style: solid;
 }
 
-#overlayy form{
+#overlayy div{
     position: fixed;
     right: 1em;
     bottom:1em;
@@ -305,7 +305,7 @@ nav h4{
         width : auto;
         margin: 0;
     }
-    #overlayy, #overlayy form {
+    #overlayy, #overlayy div {
         width: 50%;
     }
     #overlayy input{

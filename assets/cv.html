@@ -152,21 +152,21 @@
             </li>
         </ul>
     </article>
-    <button id="btnChat">Chat</button>
+    <button id="btnChat">ChatCV</button>
     <div id="overlayy">
         <span id="closeChat">&times;</span>
         <h2>🤖🐼 PrisciBot</h2>
-        <ul>
-            <li class='bot'>
-                Bonjour, que voulez-vous savoir sur moi ?
-            </li>
+        <ul id="messages">
             <li class='bot'>
                 /!\ CE CHATBOT N'EST PAS ENCORE DISPONIBLE /!\
             </li>
+            <li class='bot'>
+                Bonjour, que voulez-vous savoir sur moi ?
+            </li>
         </ul>
-        <form>
-            <input type="text" id="chat-input" placeholder="Envoyer un message..." />
-            <button type="submit" class="chat-submit" id="chat-submit">Envoyer</button>
-        </form>
+        <div>
+            <input type="text" id="chat-input" placeholder="Envoyer une question sur mon CV..." />
+            <button id="chat-submit">Envoyer</button>
+        </div>
     </div>
 </body>

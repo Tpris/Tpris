@@ -7,20 +7,20 @@ function init() {
 
     var btnClose = document.getElementById('btnClose');
     btnClose.addEventListener('click', close)
-/*
-    var nav = document.getElementById('blocTexte');
-    var openn = true;
-    overlay.addEventListener('click', closeout);
-    function closeout() {
-        nav.addEventListener('click', function () { openn = true; })
-        if (!openn) overlay.style.display = 'none';
-        openn = false;
-    }*/
+    /*
+        var nav = document.getElementById('blocTexte');
+        var openn = true;
+        overlay.addEventListener('click', closeout);
+        function closeout() {
+            nav.addEventListener('click', function () { openn = true; })
+            if (!openn) overlay.style.display = 'none';
+            openn = false;
+        }*/
 
     var btnChat = document.getElementById('btnChat');
     var overlay2 = document.getElementById('overlayy');
     function openChat() {
-        overlay2.style.display = 'block';   
+        overlay2.style.display = 'block';
     }
     btnChat.addEventListener('click', openChat);
 
@@ -30,6 +30,9 @@ function init() {
         overlay2.style.display = 'none';
     }
     btnCloseChat.addEventListener('click', closeChat)
+
+    var chatSub = document.getElementById('chat-submit');
+    chatSub.addEventListener('click', send);
 }
 
 function open() {
@@ -37,5 +40,16 @@ function open() {
 }
 function close() {
     overlay.style.display = 'none';
+}
+function send() {
+    let chatInput = document.getElementById('chat-input');
+    if(chatInput.value !=""){
+        let textnode = document.createTextNode(chatInput.value);
+        let node = document.createElement("LI");
+        node.className = "user"
+        node.appendChild(textnode);
+        let listemsg = document.getElementById('messages');
+        listemsg.appendChild(node);
+    }
 }
 
