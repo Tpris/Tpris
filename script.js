@@ -28,11 +28,11 @@ $(document).ready(function () {
         $("#bande ul li").css('transition', '0.7s');
     });
     $("#bande ul li").eq(0).hover(function () {
-        $("#bande h2").text("Venez découvrir ce site et qui je suis");
+        $("#bande h2").text("Découvrez qui je suis");
         $("#bande ul li").eq(0).css('opacity', '1');
     });
     $("#bande ul li").eq(1).hover(function () {
-        $("#bande h2").text("Venez consulter mon CV");
+        $("#bande h2").text("Consultez mon CV");
         $("#bande ul li").eq(1).css('opacity', '1');
     });
     $("#bande ul li").eq(2).hover(function () {
@@ -40,11 +40,11 @@ $(document).ready(function () {
         $("#bande ul li").eq(2).css('opacity', '1');
     });
     $("#bande ul li").eq(3).hover(function () {
-        $("#bande h2").text("Des jeux sont disponibles");
+        $("#bande h2").text("Jouez à des jeux que j'ai réalisé");
         $("#bande ul li").eq(3).css('opacity', '1');
     });
     $("#bande ul li").eq(4).hover(function () {
-        $("#bande h2").text("Venez voir les livres que je lis");
+        $("#bande h2").text("Jetez un oeil aux livres que je lis");
         $("#bande ul li").eq(4).css('opacity', '1');
     });
     counter = 0;
